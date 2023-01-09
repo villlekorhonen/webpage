@@ -1,0 +1,149 @@
+<html>
+<head>
+
+<script type="text/javascript"
+		src="https://code.jquery.com/jquery-3.5.1.js">
+</script>
+
+
+<link rel="stylesheet"
+		href=
+"https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+
+<script src=
+"https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js">
+</script>
+</head>
+<body>
+<h1 style="color:black; background-color:gold;">
+	Sarjataulukko
+</h1>
+<h3 style="background-color: gold;">
+   
+</h3>
+
+
+<table id="tableID" class="display nowrap">
+	<thead>
+	<tr>
+		<th>Joukkue</th>
+		<th>Ottelut</th>
+        <th>Voitot</th>
+        <th>Tappiot</th>
+        <th>Maaliero</th>
+        <th>Pisteet</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>HIFK</td>
+		<td>8</td>
+        <td>4</td>
+        <td>4</td>
+		<td>2</td>
+		<td>13</td>
+	</tr>
+	<tr>
+		<td>HPK</td>
+		<td>6</td>
+        <td>4</td>
+        <td>2</td>
+		<td>7</td>
+		<td>13</td>
+	</tr>
+	<tr>
+		<td>ILVES</td>
+		<td>9</td>
+        <td>4</td>
+        <td>5</td>
+		<td>-11</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td>JOKERIT</td>
+		<td>7</td>
+        <td>5</td>
+        <td>2</td>
+		<td>11</td>
+		<td>16</td>
+	</tr>
+	<tr>
+		<td>JUKURIT</td>
+		<td>7</td>
+        <td>0</td>
+        <td>7</td>
+		<td>-13</td>
+		<td>2</td>
+    </tr>
+    <tr>
+		<td>JYP</td>
+		<td>8</td>
+        <td>3</td>
+        <td>5</td>
+		<td>-6</td>
+		<td>9</td>
+	</tr>
+	<tr>
+		<td>KALPA</td>
+		<td>7</td>
+        <td>2</td>
+        <td>5</td>
+		<td>-4</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td>KÄRPÄT</td>
+		<td>9</td>
+        <td>6</td>
+        <td>3</td>
+		<td>14</td>
+		<td>17</td>
+	</tr>
+
+	<tr>
+		<td>PELICANS</td>
+		<td>7</td>
+        <td>3</td>
+        <td>4</td>
+		<td>-8</td>
+		<td>9</td>
+	</tr>
+	<tr>
+		<td>LUKKO</td>
+		<td>8</td>
+        <td>7</td>
+        <td>1</td>
+		<td>11</td>
+		<td>21</td>
+    </tr>
+    <tr>
+		<td>TAPPARA</td>
+		<td>8</td>
+        <td>6</td>
+        <td>2</td>
+		<td>7</td>
+		<td>16</td>
+    </tr>
+    <tr>
+		<td>TPS</td>
+		<td>6</td>
+        <td>1</td>
+        <td>5</td>
+		<td>-10</td>
+		<td>3</td>
+    </tr>
+    
+   		
+	</tbody>
+</table>
+<script>
+
+	$(document).ready(function () {
+	$('#tableID').DataTable({
+
+		order: [[5, 'desc']]
+	});
+	});
+</script>
+</body>
+</html>

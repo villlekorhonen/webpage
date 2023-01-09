@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kalenteri</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Etusivu</a>
+                </div>
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="about.html">Kalenteri</a>
+                </div>           
+            
+
+
+            <div class="nav-link-wrapper">
+                <a href="Joukkue.html">Joukkue</a>
+            </div>        
+            
+            <div class="nav-link-wrapper">
+                <a href="Sarjataulukko.html">Sarjataulukko</a>
+            </div>     
+   
+            <div class="nav-link-wrapper">
+                <a href="Tilastot.html">Tilastot</a>
+            </div>     
+
+
+        </div>
+
+            <div class="right-side"> 
+                <div class="brand">  
+                    <div>ILVES U18</div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="two-column-wrapper">
+                <div class="profile-image-wrapper">
+                
+                </div>    
+                
+                <div class="profile-content-wrapper">
+                    <h1>Kalenteri</h1>
+
+                    <style>
+                        * {box-sizing: border-box;}
+                        ul {list-style-type: none;}
+                        body {font-family: Verdana, sans-serif;}
+                        
+                        .month {
+                          padding: 10px 50px;
+                          width: 100%;
+                          background: gold;
+                          text-align: center;
+                        }
+                        
+                        .month ul {
+                          margin: 0;
+                          padding: 0;
+                        }
+                        
+                        .month ul li {
+                          color: black;
+                          font-size: 20px;
+                          text-transform: uppercase;
+                          letter-spacing: 3px;
+                        }
+                        
+                        .month .prev {
+                          float: left;
+                          padding-top: 10px;
+                        }
+                        
+                        .month .next {
+                          float: right;
+                          padding-top: 10px;
+                        }
+                        
+                        .weekdays {
+                          margin: 0;
+                          padding: 10px 0;
+                          background-color: lightgreen;
+                        }
+                        
+                        .weekdays li {
+                          display: inline-block;
+                          width: 13.6%;
+                          color: black;
+                          text-align: center;
+                        }
+                        
+                        .days {
+                          padding: 10px 10px;
+                          background: white;
+                          margin: 0;
+                        }
+                        
+                        .days li {
+                          list-style-type: none;
+                          display: inline-block;
+                          width: 13.6%;
+                          text-align: center;
+                          margin-bottom: 50px;
+                          font-size:12px;
+                          color: black;
+                        }
+                        
+                        .days li .active {
+                          padding: 5px;
+                          background: #1abc9c;
+                          color: white !important
+                        }
+                        
+                        /* Add media queries for smaller screens */
+                        @media screen and (max-width:720px) {
+                          .weekdays li, .days li {width: 13.1%;}
+                        }
+                        
+                        @media screen and (max-width: 420px) {
+                          .weekdays li, .days li {width: 12.5%;}
+                          .days li .active {padding: 2px;}
+                        }
+                        
+                        @media screen and (max-width: 290px) {
+                          .weekdays li, .days li {width: 12.2%;}
+                        }
+                        </style>
+                        </head>
+                        <body>
+                        
+                        
+                        
+                        <div class="month">      
+                          <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li>
+                              Joulukuu<br>
+                              <span style="font-size:18px">2022</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <ul class="weekdays">
+                          <li>Ma</li>
+                          <li>Ti</li>
+                          <li>Ke</li>
+                          <li>To</li>
+                          <li>Pe</li>
+                          <li>La</li>
+                          <li>Su</li>
+                        </ul>
+                        
+                        <ul class="days">  
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li>1<br><br><br><br></li>
+                          <li>2<br><br><br><br></li>
+                          <li>3<br><br><br><br></li>
+                          <li>4<br><br><br><br></li>
+                          <li>5<br><br><br><br></li>
+                          <li>6<br><br><br><br></li>
+                          <li>7<br><br><br><br></li>
+                          <li>8<br><br><br><br></li>
+                          <li>9<br><br><br><br></li>
+                          <li>10<br><br><br><br></li>
+                          <li>11<br><br><br><br></li>
+                          <li>12<br><br><br>Vapaa<br><br><br></li>
+                          <li>13<br><br><br>8.00 Aamufysiikka, Haka2<br>16.15 Oheinen, Haka2<br>17.45 Jää, Haka2</li>
+                          <li>14<br><br>7.30 Aamufysiikka, Haka2<br>8.15 Jää, Haka2<br>18.15 Oheinen, Haka1<br>19.30 Jää, Haka1</li>
+                          <li>15<br><br><br>Vapaa<br><br><br></li>
+                          <li>16<br><br>7.30 Aamufysiikka, Haka2<br>8.15 Jää, Haka2<br>18.00 Oheinen, Haka2<br>19.30 Jää, Haka2</li>
+                          <li>17<br><br><br>12.30 Lähtö Lahteen, Haka2<br><br>16.00 Pelicans-Ilves</li>
+                          <li>18<br><br><br>13.15 Palaveri, Haka1<br><br>14.45 Tappara-Ilves, Haka1</li>
+                          <li>19<br><br><br><br>17.00 Oheinen, Haka1<br>18.15 Jää, Haka1</li>
+                          <li>20<br><br>7.30 Aamufysiikka, Haka2<br>8.15 Jää, Haka2<br><br>18.30 Liigapeli:Ilves-KooKoo</li>
+                          <li>21<br><br>7.30 Aamufysiikka, Haka2<br>8.15 Jää, Haka2<br>17.00 Oheinen, Haka1<br>18.15 Jää, Haka1</li>
+                          <li>22<br><br><br><br>15.30 Oheinen, Haka1<br>17.00 Jää, Haka1</li>
+                          <li>23<br><br><br>Vapaa<br><br><br></li>
+                          <li>24<br><br><br>HYVÄÄ<br><br><br></li>
+                          <li>25<br><br><br>JOULUA<br><br><br></li>
+                          <li>26<br><br><br>Vapaa<br><br><br></li>
+                          <li>27<br><br><br>Vapaa<br><br><br></li>
+                          <li>28<br><br><br>Vapaa<br><br><br></li>
+                          <li>29<br><br><br>Vapaa<br><br><br></li>
+                          <li>30<br><br><br>Vapaa<br><br><br></li>
+                          <li>31<br><br><br>HYVÄÄ UUTTAVUOTTA<br><br><br></li>
+                        </ul>
+                        
+                    </div>
+ </div>
+</body>
+</html>

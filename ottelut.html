@@ -1,0 +1,77 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    th{ 
+        color: black;
+        background-color: gold;
+            }
+</style>
+
+
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>Päivämäärä</th>
+            <th>Aika</th>
+            <th>Paikka</th>
+            <th>Ottelu</th>
+            <th>Tulos</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [    
+            {'päivämäärä':'25.11.2022', 'aika':'15.00', 'paikka':'Kuortane', 'ottelu':'KALPA-ILVES', 'tulos':'6-2'},
+            {'päivämäärä':'26.11.2022', 'aika':'15.30', 'paikka':'Kuortane', 'ottelu':'ILVES-KÄRPÄT', 'tulos':'6-5 ja'},
+            {'päivämäärä':'27.11.2022', 'aika':'15.00', 'paikka':'Kuortane', 'ottelu':'ILVES-JYP', 'tulos':'2-5'},
+            {'päivämäärä':'03.12.2022', 'aika':'13.45', 'paikka':'Hakametsä 2', 'ottelu':'ILVES-JUKURIT', 'tulos':'2-1 ja'},
+            {'päivämäärä':'04.12.2022', 'aika':'15.00', 'paikka':'Hakametsä 1', 'ottelu':'ILVES-TPS', 'tulos':'1-4'},
+            {'päivämäärä':'10.12.2022', 'aika':'15.00', 'paikka':'Hakametsä 1', 'ottelu':'ILVES-TAPPARA', 'tulos':'1-2'},
+            {'päivämäärä':'11.12.2022', 'aika':'16.20', 'paikka':'Töölö 2', 'ottelu':'HIFK-ILVES', 'tulos':'7-2'},
+            {'päivämäärä':'17.12.2022', 'aika':'16.00', 'paikka':'Lahti', 'ottelu':'PELICANS-ILVES', 'tulos':'1-2'},
+            {'päivämäärä':'18.12.2022', 'aika':'14.45', 'paikka':'Hakametsä 1', 'ottelu':'TAPPARA-ILVES', 'tulos':'3-5'},
+            {'päivämäärä':'06.01.2023', 'aika':'14.00', 'paikka':'Rauman hh', 'ottelu':'LUKKO-ILVES', 'tulos':''},
+            {'päivämäärä':'13.01.2023', 'aika':'', 'paikka':'Pirkkola', 'ottelu':'JOKERIT-ILVES', 'tulos':''},
+            {'päivämäärä':'14.01.2023', 'aika':'12.00', 'paikka':'Hämeenlinna', 'ottelu':'HPK-ILVES', 'tulos':''},
+            {'päivämäärä':'20.01.2023', 'aika':'', 'paikka':'Impivaara 1', 'ottelu':'TPS-ILVES', 'tulos':''},
+            {'päivämäärä':'22.01.2023', 'aika':'', 'paikka':'Hakametsä 2', 'ottelu':'ILVES-HIFK', 'tulos':''},
+            {'päivämäärä':'28.01.2023', 'aika':'12.15', 'paikka':'Mikkeli', 'ottelu':'JUKURIT-ILVES', 'tulos':''},
+            {'päivämäärä':'04.02.2023', 'aika':'', 'paikka':'Raksila', 'ottelu':'KÄRPÄT-ILVES', 'tulos':''},
+            {'päivämäärä':'18.02.2023', 'aika':'', 'paikka':'Hakametsä 2', 'ottelu':'ILVES-LUKKO', 'tulos':''},
+            {'päivämäärä':'24.02.2023', 'aika':'', 'paikka':'Hakametsä 2', 'ottelu':'ILVES-JOKERIT', 'tulos':''},
+            {'päivämäärä':'25.02.2023', 'aika':'', 'paikka':'Hakametsä 2', 'ottelu':'ILVES-HPK', 'tulos':''},
+            {'päivämäärä':'04.03.2023', 'aika':'', 'paikka':'Hippos hh', 'ottelu':'JYP-ILVES', 'tulos':''},
+            {'päivämäärä':'10.03.2023', 'aika':'', 'paikka':'Hakametsä 2', 'ottelu':'ILVES-PELICANS', 'tulos':''},
+            {'päivämäärä':'11.03.2023', 'aika':'', 'paikka':'Hakametsä 2', 'ottelu':'ILVES-KALPA', 'tulos':''},
+       
+ ]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+            var row = `<tr>
+                                <td>${data[i].päivämäärä}</td>
+                                <td>${data[i].aika}</td>
+                                <td>${data[i].paikka}</td>
+                                <td>${data[i].ottelu}</td>
+                                <td>${data[i].tulos}</td>
+                        
+					 </tr>`
+			table.innerHTML += row
+
+
+		}
+	}
+
+</script>
+
